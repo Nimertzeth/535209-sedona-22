@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="/img/favicon.ico">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -29,26 +29,6 @@
         <button id="button-open-menu" onclick="showMenu()" class="menu__button" type="button"><img alt="Лого" src="img/button-menu-open.svg"></button>
         <button id="button-close-menu" onclick="closeMenu()" class="menu__button menu__button--close" type="button"><img alt="Лого" src="img/button-menu-close.svg"></button>
       </nav>
-      <script>
-            function showMenu(){
-                document.getElementById("menu-list1").classList.remove('menu__element--hidden');
-                document.getElementById("menu-list2").classList.remove('menu__element--hidden');
-                document.getElementById("menu-list3").classList.remove('menu__element--hidden');
-                document.getElementById("menu-list4").classList.remove('menu__element--hidden');
-                document.getElementById("menu-picture").classList.add('menu__element--hidden');
-                document.getElementById("button-open-menu").classList.add('menu__button--close');
-                document.getElementById("button-close-menu").classList.remove('menu__button--close');
-              }
-            function closeMenu(){
-                document.getElementById("menu-list1").classList.add('menu__element--hidden');
-                document.getElementById("menu-list2").classList.add('menu__element--hidden');
-                document.getElementById("menu-list3").classList.add('menu__element--hidden');
-                document.getElementById("menu-list4").classList.add('menu__element--hidden');
-                document.getElementById("menu-picture").classList.remove('menu__element--hidden');
-                document.getElementById("button-open-menu").classList.remove('menu__button--close');
-                document.getElementById("button-close-menu").classList.add('menu__button--close');
-              }
-          </script>
     </header>
     <main class="main">
       <section class="about about-catalog">
@@ -59,10 +39,10 @@
             </svg>
             <div class="about__img-arrow">
               <div class="about__img-arrowleft">
-                <img alt="стрелка" src="/img/bottom-line-main-img.svg" width="600">
+                <img alt="стрелка" src="img/bottom-line-main-img.svg" width="600">
               </div>
               <div class="about__img-arrowright">
-                <img alt="стрелка" src="/img/bottom-line-main-img.svg" width="600">
+                <img alt="стрелка" src="img/bottom-line-main-img.svg" width="600">
               </div>
             </div>
           </div>
@@ -78,11 +58,13 @@
         <div class="gallery__wrapper">
           <article class="gallery__foto foto foto-one">
             <div class="foto__img">
-              <picture>
-                <source media="(min-width: 900px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-1-table.jpg, img/photo-1-table@2x.jpg 2x">
-                <img alt="фото1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
-              </picture>
+              <a href="full_image1.jpg">
+                <picture>
+                  <source media="(min-width: 900px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-table.jpg, img/photo-1-table@2x.jpg 2x">
+                  <img alt="фото1" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
+                </picture>
+              </a>
             </div>
             <div class="foto__info">
               <div class="foto__title">
@@ -99,11 +81,13 @@
           </article>
           <article class="gallery__foto foto foto-two">
             <div class="foto__img">
-              <picture>
-                <source media="(min-width: 900px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-2-table.jpg, img/photo-2-table@2x.jpg 2x">
-                <img alt="фото2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
-              </picture>
+              <a href="full_image2.jpg">
+                <picture>
+                  <source media="(min-width: 900px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-table.jpg, img/photo-2-table@2x.jpg 2x">
+                  <img alt="фото2" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
+                </picture>
+              </a>
             </div>
             <div class="foto__info">
               <div class="foto__title">
@@ -120,11 +104,13 @@
           </article>
           <article class="gallery__foto foto foto-three">
             <div class="foto__img">
-              <picture>
-                <source media="(min-width: 900px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-3-table.jpg, img/photo-3-table@2x.jpg 2x">
-                <img alt="фото3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
-              </picture>
+              <a href="full_image3.jpg">
+                <picture>
+                  <source media="(min-width: 900px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-table.jpg, img/photo-3-table@2x.jpg 2x">
+                  <img alt="фото3" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
+                </picture>
+              </a>
             </div>
             <div class="foto__info">
               <div class="foto__title">
@@ -141,11 +127,13 @@
           </article>
           <article class="gallery__foto foto foto-four">
             <div class="foto__img">
-              <picture>
-                <source media="(min-width: 900px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-4-table.jpg, img/photo-4-table@2x.jpg 2x">
-                <img alt="фото4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
-              </picture>
+              <a href="full_image4.jpg">
+                <picture>
+                  <source media="(min-width: 900px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-table.jpg, img/photo-4-table@2x.jpg 2x">
+                  <img alt="фото4" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
+                </picture>
+              </a>
             </div>
             <div class="foto__info">
               <div class="foto__title">
@@ -222,6 +210,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/script.min.js"></script>
   </body>
 </html>
