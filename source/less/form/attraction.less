@@ -11,16 +11,18 @@
     display: flex;
     flex-direction: row;
     padding: 0;
+    margin-top: 30px;
   }
 }
 .attraction__element{
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items:center;
   margin-bottom: 24px;
-}
-.attraction__element:last-child{
-  margin-bottom: 30px;
+  @media screen and (min-width: 1200px){
+    width: 200px;
+  }
 }
 .attraction__label{
   cursor: pointer;
@@ -38,7 +40,7 @@
   background: rgba(213, 213, 213, 1);
 }
 .attraction__checkbox:checked + .attraction__label{
-  columns: pointer;
+  cursor: pointer;
   display: block;
   width: 48px;
   height: 48px;
@@ -56,7 +58,7 @@
   background-repeat:no-repeat;
 }
 .attraction__checkbox:checked + .attraction__label:active{
-  columns: pointer;
+  cursor: pointer;
   display: block;
   width: 48px;
   height: 48px;
