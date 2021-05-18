@@ -1,3 +1,8 @@
+.impressions{
+  @media screen and (min-width: 768px){
+  order:1;
+  }
+}
 .impressions__element{
   position: relative;
   display: flex;
@@ -7,12 +12,14 @@
   @media screen and (min-width: 768px){
     margin-bottom: 30px;
   }
+  @media screen and (min-width: 1200px){
+    padding-left: 10px;
+  }
 }
 .impressions__element:last-child{
   margin-bottom: 31px;
 }
-.impressions__radio,
-.attraction__checkbox{
+.impressions__radio{
   display: none;
 }
 .impressions__label{
@@ -46,12 +53,15 @@
   border:15px solid rgba(213, 213, 213, 1);
   background:rgba(0, 0, 0, 0.3);
 }
-.form .impressions__text,
-.form .attraction__text{
-  font-family: ptsans-bold, "Arial Narrow", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
+.impressions__title{
+  @media screen and (min-width: 768px){
+    margin-bottom: 54px;
+  }
+}
+.impressions__text{
+  @media screen and (min-width: 768px){
+    margin:0;
+  }
 }
 .impressions__text-position{
   position:absolute;
@@ -61,8 +71,27 @@
     left: 85px;
   }
 }
-.attraction__text-position{
-  position:absolute;
-  left: 75px;
-  top: 10px;
+.impressions:after{
+  @media screen and (min-width: 768px){
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background:rgba(219, 219, 219, 1);
+    top:0;
+    right: -2px;
+  }
+}
+.impressions:after{
+  @media screen and (min-width: 768px){
+    content: "";
+    display: block;
+    position: absolute;
+    height: 282px;
+    width: 1px;
+    background:rgba(219, 219, 219, 1);
+    top:10px;
+    right: -2px;
+  }
 }

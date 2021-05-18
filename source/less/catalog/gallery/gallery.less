@@ -1,0 +1,25 @@
+.gallery{
+  margin-top: 25px;
+}
+.gallery__wrapper{
+  @media screen and (min-width: 500px) and (max-width:767px){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px){
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr min-content min-content;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1200px){
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr min-content;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
