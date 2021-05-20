@@ -1,0 +1,108 @@
+.notes {
+  background: white;
+  padding-top: 26px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    width: 256px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+  }
+}
+
+.notes:nth-child(3) {
+  padding-top: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+}
+
+.notes:nth-child(5) {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 55px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 75px;
+  }
+}
+
+.notes__title {
+  position: relative;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.notes__title img {
+  position: absolute;
+  left: -50px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    left: 0;
+  }
+}
+
+.notes__img-house {
+  @media screen and (min-width: 768px) {
+    width: 72px;
+    height: 75px;
+  }
+}
+
+.notes__img-burger {
+  @media screen and (min-width: 768px) {
+    width: 76px;
+    height: 75px;
+  }
+}
+
+.notes__img-gift {
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 75px;
+  }
+}
+
+.notes h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: "ptsans-bold", "Arial Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.notes p {
+  font-family: "ptsans", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-right: 40px;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+}
